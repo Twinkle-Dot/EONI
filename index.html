@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EONI</title>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JavaScript Deferred -->
+    <script defer src="index.js"></script>
+  </head>
+  <body class="font-aldrich">
+    <section id="hero">
+      <div
+        class="container text-center font-aldrich py-40 bg-cover"
+        style="background-image: url(./Smoke.jpg)"
+      >
+        <div class="flex flex-col space-y-20 mb-12 md:mb-16">
+          <h1
+            class="countdown text-lightTurquoise justify-self-end text-5xl md:text-6xl lg:text-8xl "
+          >
+            <!-- 123:123:123 -->
+          </h1>
+          <span
+            class="text-brand font-audio text-4xl md:text-6xl lg:text-7xl"
+            >EONI</span
+          >
+        </div>
+        <button
+          class="btn-primary btn"
+        >
+          <a href="#" class="text-sm md:text-base lg:text-3xl"> Angalia Trela </a>
+        </button>
+      </div>
+    </section>
+
+    <section id="story" class="bg-newBlack">
+      <div class=" overflow-hidden story-container container unseen tailwind-story-container">
+        <!-- Left Item -->
+        <div class="text-plainWhite w-full md:w-1/2 text-center md:text-left my-auto sm:py-0 md:py-20 lg:py-0">
+          <h1 class="heading mt-20 mb-12">Hadithi</h1>
+          <p class="text-base md:text-xl lg:text-2xl leading-7">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            iusto commodi nostrum culpa recusandae inventore aliquam atque
+            impedit aliquid quibusdam tempora enim fugit harum excepturi saepe
+            beatae, id alias nam provident adipisci doloribus modi dolorum
+            ullam. Commodi, quibusdam reiciendis? Repudiandae fuga suscipit qui
+            praesentium porro totam, explicabo sint molestiae laboriosam.
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis harum iure saepe?
+          </p>
+        </div>
+        <!-- Right Item -->
+        <div class="story-img seen w-full md:w-1/2 self-end pt-20 ease-in-out duration-700 md:pt-0 md:self-center ">
+      <img src="images/robot2.png" alt="">
+      </div>
+    </section>
+
+    <section id="hub">
+      <div class="container px-12 py-16 bg-black md:overflow-y-hidden">
+        <h1 class="heading md:mt-16 mb-16 text-plainWhite">Mengineyo</h1>
+        <!-- Images -->
+        <div class="max-w-xs hub-flex">
+          <div class="hub-img1 hub-img" style="background-image: url('images/hub1.png');"><span class="text-plainWhite text-4xl">The Team</span></div>
+          <div class="hub-img2 hub-img" style="background-image: url('images/hub2.png');"><span class="text-plainWhite text-4xl">Gallery</span></div>
+          <div class="hub-img3 hub-img" style="background-image: url('images/hub3.png');"><span class="text-plainWhite text-4xl">Behind The Scenes</span></div>
+        </div>
+        </div>
+    </section>
+
+  </body>
+</html>

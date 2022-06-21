@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Applied Tailwind CSS classes */
+
+.hub-img {
+  @apply text-center flex flex-col items-center justify-center;
+}
+
+.heading {
+  @apply text-2xl md:text-4xl lg:text-6xl text-plainWhite text-center md:text-left;
+}
+
+.hub-flex {
+  @apply flex flex-col space-y-12 items-center justify-end md:h-1/2 md:max-w-none
+  md:flex-row md:space-x-12 md:space-y-0 md:justify-center;
+}
+
+.btn {
+  @apply px-3 py-3 text-brand hover:bg-brand hover:text-gray-900 ease-in-out duration-700 lg:px-6 lg:py-6 md:px-4 md:py-4;
+}
+
+.tailwind-story-container {
+  @apply flex flex-col-reverse px-12 py-16 justify-around space-y-0 space-x-12 ease-in-out duration-700 md:py-0 md:flex-row;
+}
+
+/* Pure CSS */
+
+body {
+  max-width: 100%;
+}
+
+.btn-primary {
+  border: 3px solid #2eb0cd;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.hub-img {
+  cursor: pointer;
+  height: 600px;
+  width: 300px;
+  background-size: cover;
+  background-color: #000;
+  filter: brightness(80%) grayscale(100);
+  transition: all 1s ease-in-out;
+}
+
+.hub-img:hover {
+  filter: brightness(100%) grayscale(0);
+}
+
+.hub-img1 {
+  background-position: center right;
+}
+
+.hub-img2 {
+  background-position: center bottom;
+  transition: all 0.8s ease-in-out;
+}
+
+.seen.story-img {
+  transform: translateX(40%);
+}
+
+.seen.hub-img1 {
+  transform: translateY(60%);
+  opacity: 0;
+}
+
+.seen.hub-img2 {
+  transform: translateY(-40%);
+  opacity: 0;
+}
+
+.seen.hub-img3 {
+  transform: translateY(60%);
+  opacity: 0;
+}
+
+.unseen {
+  opacity: 0;
+}
+
+/* Media Queries Pure CSS */
+
+@media (max-width: 768px) {
+  .hub-img {
+    cursor: pointer;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-color: #000;
+    filter: brightness(80%);
+    transition: all 1s ease-in-out;
+  }
+
+  .seen.story-img {
+    transform: translateY(-40%);
+  }
+
+  .seen.hub-img1 {
+    transform: translateY(0) translateX(30%);
+    opacity: 0;
+  }
+
+  .seen.hub-img2 {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  .seen.hub-img3 {
+    transform: translateY(0) translateX(-30%);
+    opacity: 0;
+  }
+}
