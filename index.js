@@ -6,7 +6,13 @@ const storyContainer = document.querySelector(".story-container");
 const storyImg = document.querySelector(".story-img");
 const hubSection = document.querySelector("#hub");
 const hubImages = document.querySelectorAll(".hub-img");
+const bgImage = document.querySelector(".bg-image");
+const loader = document.querySelector(".loader-wrapper");
 
+// Loader on window load
+window.onload = function () {
+  loader.style.display = "none";
+};
 // Release Date Countdown
 
 const releaseDate = new Date("August 25, 2022 00:00:00").getTime();
