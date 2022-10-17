@@ -23,3 +23,8 @@
     @content;
   }
 }
+@mixin for-large-desktop-up {
+  @media (minx-width: 1400px) {
+    @content;
+  }
+}

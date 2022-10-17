@@ -190,8 +190,14 @@ i {
 }
 @media (min-width: 1366px) {
   .gallery-grid .img-container {
-    height: 500px;
-    width: 500px;
+    height: 350px;
+    width: 350px;
+  }
+}
+@media (minx-width: 1400px) {
+  .gallery-grid .img-container {
+    height: 400px;
+    width: 400px;
   }
 }
 
@@ -212,7 +218,7 @@ i {
 }
 
 .img5 {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(80, 51, 8, 0.397)), url(../../img/img5-lazy.JPG);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(80, 51, 8, 0.397)), url(../../img/img5-lazy.jpg);
 }
 
 .img6 {

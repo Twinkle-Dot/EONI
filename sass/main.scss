@@ -126,8 +126,13 @@
     }
 
     @include for-desktop-up {
-      height: 500px;
-      width: 500px;
+      height: 350px;
+      width: 350px;
+    }
+
+    @include for-large-desktop-up {
+      height: 400px;
+      width: 400px;
     }
   }
 }
@@ -149,7 +154,7 @@
 }
 
 .img5 {
-  background: $backgroundshade, url(../../img/img5-lazy.JPG);
+  background: $backgroundshade, url(../../img/img5-lazy.jpg);
 }
 
 .img6 {
