@@ -1,0 +1,82 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $futureblack;
+  font-family: $metafont;
+  font-weight: 400;
+  color: $plainwhite;
+  font-size: 2rem;
+}
+
+section,
+header,
+footer {
+  padding: 3.2rem 2.4rem;
+
+  @include for-tablet-portrait-up {
+    padding: 4rem;
+  }
+
+  @include for-laptop-up {
+    padding: 5.6rem;
+  }
+
+  @include for-desktop-up {
+    padding: 6.4rem 9.6rem;
+  }
+}
+
+h2 {
+  font-family: $orbitron;
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+  color: $futurecolor;
+
+  @include for-tablet-portrait-up {
+    font-size: 3.2rem;
+  }
+
+  @include for-laptop-up {
+    font-size: 4rem;
+  }
+
+  @include for-desktop-up {
+    font-size: 4.8rem;
+  }
+}
+
+p {
+  font-family: $metafont;
+  font-size: 1.8rem;
+
+  @include for-tablet-portrait-up {
+    font-size: 2.4rem;
+  }
+
+  @include for-laptop-up {
+    font-size: 3rem;
+  }
+}
+
+i {
+  color: $futurecolor;
+}
+
+.hidden {
+  display: none;
+}
+
+.blur {
+  opacity: 20%;
+}
